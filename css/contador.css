@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-ctn h1{
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+
+#countdown {
+    display: flex;
+    font-size: 2rem;
+    gap: 10px;
+}
+
+#countdown div {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+#sky {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.5s infinite; 
+}
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
